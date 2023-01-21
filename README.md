@@ -28,7 +28,7 @@
       <a href="https://github.com/mdyeates/readme-generator"><strong>Explore the docs »</strong></a>
       <br/>
       <br/>
-      <a href="https://mdyeates.github.io/readme-generator/">View Live Website</a>
+      <a href="https://drive.google.com/file/d/1An-iMejFYy7drNO4IRWt8gJLWnfxd_21/view">View Demo</a>
       ·
       <a href="https://github.com/mdyeates/readme-generator/issues">Report Bug</a>
       ·
@@ -77,7 +77,7 @@
   
   ### Screenshot
   
-  [![Professional README Generator Screen Shot][product-screenshot]](https://mdyeates.github.io/readme-generator/)
+  [![Professional README Generator Screen Shot][product-screenshot]](https://drive.google.com/file/d/1An-iMejFYy7drNO4IRWt8gJLWnfxd_21/view)
   
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -127,9 +127,9 @@ To get a local copy up and running follow these simple example steps.
   
   ### Functionality
   
-  - The following video demonstrates the applications functionality
+  - The following animation demonstrates the applications functionality. Click the gif to view the shared video on Google Drive.
   
-    [![Functionality Video][functionality-video]](https://mdyeates.github.io/readme-generator/)
+    [![Functionality Gif][functionality-gif]](https://drive.google.com/file/d/1An-iMejFYy7drNO4IRWt8gJLWnfxd_21/view)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -212,5 +212,5 @@ Project Link: [https://github.com/mdyeates/readme-generator](https://github.com/
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
 [product-screenshot]: assets/screenshot.png
-[functionality-video]: assets/readme-gen.mp4
+[functionality-gif]: assets/readme-gen.gif
 [responsive-screenshot]: https://placehold.co/600x400?text=Placeholder
