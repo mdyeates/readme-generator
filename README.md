@@ -127,9 +127,9 @@ To get a local copy up and running follow these simple example steps.
   
   ### Functionality
   
-  - The following animation demonstrates the applications functionality
+  - The following video demonstrates the applications functionality
   
-    [![Functionality Gif][functionality-gif]](https://mdyeates.github.io/readme-generator/)
+    [![Functionality Video][functionality-video]](https://mdyeates.github.io/readme-generator/)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -212,5 +212,5 @@ Project Link: [https://github.com/mdyeates/readme-generator](https://github.com/
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
 [product-screenshot]: assets/screenshot.png
-[functionality-gif]: https://placehold.co/600x400?text=Placeholder
+[functionality-video]: assets/readme-gen.mp4
 [responsive-screenshot]: https://placehold.co/600x400?text=Placeholder
