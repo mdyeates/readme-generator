@@ -1,20 +1,20 @@
 <a name="readme-top"></a>
 
   <!-- PROJECT SHIELDS -->
-  
-  [![Contributors][contributors-shield]][contributors-url]
-  [![Forks][forks-shield]][forks-url]
-  [![Stargazers][stars-shield]][stars-url]
-  [![Issues][issues-shield]][issues-url]
-  [![MIT License][license-shield]][license-url]
-  [![LinkedIn][linkedin-shield]][linkedin-url]
-  
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
   <!-- PROJECT LOGO -->
 
   <br />
   <div align="center">
     <a href="https://github.com/mdyeates/readme-generator">
-      <img src="https://placehold.co/600x400?text=Placeholder" alt="Logo" width="200" height="200">
+      <img src="assets/logo.png" alt="Logo" width="200" height="200">
     </a>
     <h3 align="center">Professional README Generator</h3>
     <p align="center">
@@ -60,7 +60,7 @@
           <a href="#usage">Usage</a>
         <ul>
           <li><a href="#functionality">Functionality</a></li>
-          <li><a href="#mobile-responsive">Mobile Responsive</a></li>
+    <!-- <li><a href="#mobile-responsive">Mobile Responsive</a></li> -->
         </ul>
       </li>
       <li><a href="#license">License</a></li>
@@ -87,13 +87,12 @@
 
 - ![Node.js](https://img.shields.io/badge/Node.js-376e05?style=for-the-badge&logo=Node.js&logoColor=white)
 
-  
   <p align="right"><a href="#readme-top">back to top</a></p>
-  
+
   ### Description
-  
-  It has never been easier to document your repository projects than with this command-line application built using Node.js. Simply provide information about your project and let it do the rest. The generated README file includes sections for the project title, description, a table of contents, installation, usage, license, contributing, tests and questions. Additionally, the user can also select a license from a list of options, which will add a badge near the top of the README file and include a reference in the license section. The user's GitHub username and email address are also added to the questions section. For easy navigation, the table of contents includes links that take users to the relevant sections. 
-  
+
+  It has never been easier to document your repository projects than with this command-line application built using Node.js. Simply provide information about your project and let it do the rest. The generated README file includes sections for the project title, description, a table of contents, installation, usage, license, contributing, tests and questions. Additionally, the user can also select a license from a list of options, which will add a badge near the top of the README file and include a reference in the license section. The user's GitHub username and email address are also added to the questions section. For easy navigation, the table of contents includes links that take users to the relevant sections.
+
   <p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- GETTING STARTED -->
@@ -101,10 +100,10 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-  
-  ### Prerequisites
 
-* npm
+### Prerequisites
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -119,7 +118,7 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ```
-  
+
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- USAGE EXAMPLES -->
@@ -134,20 +133,20 @@ To get a local copy up and running follow these simple example steps.
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
-  ### Mobile Responsive
+  <!--### Mobile Responsive
   
   - As demonstrated in the screenshot below, this application is designed to be responsive and adjust seamlessly to fit various screen sizes
   
     [![Responsiveness Screenshot][responsive-screenshot]](https://mdyeates.github.io/readme-generator/)
   
-  <p align="right"><a href="#readme-top">back to top</a></p>
+  <p align="right"><a href="#readme-top">back to top</a></p> -->
 
   <!-- LICENSE -->
-  
-  ## License
-  
-  Distributed under the MIT License. See `LICENSE.md` for more information.
-  
+
+## License
+
+Distributed under the MIT License. See `LICENSE.md` for more information.
+
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- CONTRIBUTING -->
@@ -168,55 +167,50 @@ To get a local copy up and running follow these simple example steps.
   <p align="right"><a href="#readme-top">back to top</a></p>
 
   <!-- TESTS -->
-  
-  ## Tests
 
-  N/A
-    
+## Tests
+
+N/A
+
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- QUESTIONS -->
   
   ## Questions
 
-  If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a>
+If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a>
 
-  <a href="https://www.linkedin.com/in/mdyeates/">LinkedIn</a> | <a href="https://github.com/mdyeates/">GitHub</a>
-  
-  Project Link: [https://github.com/mdyeates/readme-generator](https://github.com/mdyeates/readme-generator)
-  
+<a href="https://www.linkedin.com/in/mdyeates/">LinkedIn</a> | <a href="https://github.com/mdyeates/">GitHub</a>
+
+Project Link: [https://github.com/mdyeates/readme-generator](https://github.com/mdyeates/readme-generator)
+
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- ACKNOWLEDGMENTS -->
   
   ## Acknowledgments
 
-  - [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
-    
+- [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
+
   <p align="right"><a href="#readme-top">back to top</a></p>
-  
+
   <!-- MARKDOWN LINKS & IMAGES -->
 
-  [contributors-shield]: https://img.shields.io/github/contributors/mdyeates/readme-generator.svg?style=for-the-badge
-  [contributors-url]: https://github.com/mdyeates/readme-generator/graphs/contributors
-  
-  [forks-shield]: https://img.shields.io/github/forks/mdyeates/readme-generator.svg?style=for-the-badge
-  [forks-url]: https://github.com/mdyeates/readme-generator/network/members
-  
-  [stars-shield]: https://img.shields.io/github/stars/mdyeates/readme-generator.svg?style=for-the-badge
-  [stars-url]: https://github.com/mdyeates/readme-generator/stargazers
-  
-  [issues-shield]: https://img.shields.io/github/issues/mdyeates/readme-generator.svg?style=for-the-badge
-  [issues-url]: https://github.com/mdyeates/readme-generator/issues
-  
-  [license-shield]: https://img.shields.io/github/license/mdyeates/readme-generator.svg?style=for-the-badge
-  [license-url]: https://github.com/mdyeates/readme-generator/blob/main/LICENSE
-  
-  [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-  [linkedin-url]: https://linkedin.com/in/mdyeates
+[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/readme-generator.svg?style=for-the-badge
+[contributors-url]: https://github.com/mdyeates/readme-generator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mdyeates/readme-generator.svg?style=for-the-badge
+[forks-url]: https://github.com/mdyeates/readme-generator/network/members
+[stars-shield]: https://img.shields.io/github/stars/mdyeates/readme-generator.svg?style=for-the-badge
+[stars-url]: https://github.com/mdyeates/readme-generator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mdyeates/readme-generator.svg?style=for-the-badge
+[issues-url]: https://github.com/mdyeates/readme-generator/issues
+[license-shield]: https://img.shields.io/github/license/mdyeates/readme-generator.svg?style=for-the-badge
+[license-url]: https://github.com/mdyeates/readme-generator/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/mdyeates
 
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
-  [product-screenshot]: https://placehold.co/600x400?text=Placeholder
-  [functionality-gif]: https://placehold.co/600x400?text=Placeholder
-  [responsive-screenshot]: https://placehold.co/600x400?text=Placeholder
+[product-screenshot]: assets/screenshot.png
+[functionality-gif]: https://placehold.co/600x400?text=Placeholder
+[responsive-screenshot]: https://placehold.co/600x400?text=Placeholder
