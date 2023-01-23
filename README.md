@@ -28,7 +28,7 @@
       <a href="https://github.com/mdyeates/readme-generator"><strong>Explore the docs »</strong></a>
       <br/>
       <br/>
-      <a href="https://drive.google.com/file/d/1An-iMejFYy7drNO4IRWt8gJLWnfxd_21/view">View Demo</a>
+      <a href="https://drive.google.com/file/d/1An-iMejFYy7drNO4IRWt8gJLWnfxd_21/view">View Walkthrough Video</a>
       ·
       <a href="https://github.com/mdyeates/readme-generator/issues">Report Bug</a>
       ·
