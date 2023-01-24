@@ -1,25 +1,32 @@
 const generateBadges = require("./generateBadges");
 
+function capitalise(str) {
+  return str
+    .split(" ")
+    .map((name) => name[0].toUpperCase() + name.slice(1))
+    .join(" ");
+}
+
 // function to generate markdown for README
 function generateMarkdown(data) {
-  const full_name = capitalise(data.full_name);
-  const repo_name = data.repo_name;
-  const project_title = capitalise(data.title);
-  const project_tagline = data.tagline;
-  const project_description = data.description;
-  const email_address = data.email;
-  const github_username = data.github_username;
-  const linkedin_username = data.linkedin_username;
-  const license = data.license;
-  const tests = data.tests;
+  const fullName = capitalise(data.fullName);
+  const { repoName } = data;
+  const title = capitalise(data.title);
+  const { tagline } = data;
+  const { description } = data;
+  const { email } = data;
+  const { githubUsername } = data;
+  const { linkedinUsername } = data;
+  const { license } = data;
+  const { tests } = data;
 
-  let technologies = data.technologies.map(generateBadges).join("\n");
+  const technologies = data.technologies.map(generateBadges).join("\n");
 
-  let credits = data.credits
+  const credits = data.credits
     .trim()
     .split("\n")
-    .filter((credit_url) => credit_url !== "")
-    .map((credit_url) => `- [${credit_url}](${credit_url})`)
+    .filter((url) => url !== "")
+    .map((url) => `- [${url}](${url})`)
     .join("\n");
 
   return `<a name="readme-top"></a>
@@ -37,26 +44,26 @@ function generateMarkdown(data) {
 
   <br />
   <div align="center">
-    <a href="https://github.com/${github_username}/${repo_name}">
+    <a href="https://github.com/${githubUsername}/${repoName}">
       <img src="https://placehold.co/600x400?text=Placeholder" alt="Logo" width="200" height="200">
     </a>
-    <h3 align="center">${project_title}</h3>
+    <h3 align="center">${title}</h3>
     <p align="center">
     <br/>
-    ${project_tagline}
+    ${tagline}
     <br/>
       <br/>
-      ${project_title} is proudly built by: ${full_name}
+      ${title} is proudly built by: ${fullName}
       <br/>
       <br/>
-      <a href="https://github.com/${github_username}/${repo_name}"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/${githubUsername}/${repoName}"><strong>Explore the docs »</strong></a>
       <br/>
       <br/>
-      <a href="https://${github_username}.github.io/${repo_name}/">View Live Website</a>
+      <a href="https://${githubUsername}.github.io/${repoName}/">View Live Website</a>
       ·
-      <a href="https://github.com/${github_username}/${repo_name}/issues">Report Bug</a>
+      <a href="https://github.com/${githubUsername}/${repoName}/issues">Report Bug</a>
       ·
-      <a href="https://github.com/${github_username}/${repo_name}/issues">Request Feature</a>
+      <a href="https://github.com/${githubUsername}/${repoName}/issues">Request Feature</a>
     </p>
   </div>
   
@@ -101,7 +108,7 @@ function generateMarkdown(data) {
   
   ### Screenshot
   
-  [![${project_title} Screen Shot][product-screenshot]](https://${github_username}.github.io/${repo_name}/)
+  [![${title} Screen Shot][product-screenshot]](https://${githubUsername}.github.io/${repoName}/)
   
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -113,7 +120,7 @@ function generateMarkdown(data) {
   
   ### Description
   
-  ${project_description}
+  ${description}
   
   <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -134,7 +141,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    \`\`\`sh
-   git clone https://github.com/${github_username}/${repo_name}.git
+   git clone https://github.com/${githubUsername}/${repoName}.git
    \`\`\`
 2. Install NPM packages
    \`\`\`sh
@@ -151,7 +158,7 @@ To get a local copy up and running follow these simple example steps.
   
   - The following animation demonstrates the applications functionality
   
-    [![Functionality Gif][functionality-gif]](https://${github_username}.github.io/${repo_name}/)
+    [![Functionality Gif][functionality-gif]](https://${githubUsername}.github.io/${repoName}/)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -159,7 +166,7 @@ To get a local copy up and running follow these simple example steps.
   
   - As demonstrated in the screenshot below, this application is designed to be responsive and adjust seamlessly to fit various screen sizes
   
-    [![Responsiveness Screenshot][responsive-screenshot]](https://${github_username}.github.io/${repo_name}/)
+    [![Responsiveness Screenshot][responsive-screenshot]](https://${githubUsername}.github.io/${repoName}/)
   
   <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -200,11 +207,11 @@ To get a local copy up and running follow these simple example steps.
   
   ## Questions
 
-  If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:${email_address}">${email_address}</a>
+  If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:${email}">${email}</a>
 
-  <a href="https://www.linkedin.com/in/${linkedin_username}/">LinkedIn</a> | <a href="https://github.com/${github_username}/">GitHub</a>
+  <a href="https://www.linkedin.com/in/${linkedinUsername}/">LinkedIn</a> | <a href="https://github.com/${githubUsername}/">GitHub</a>
   
-  Project Link: [https://github.com/${github_username}/${repo_name}](https://github.com/${github_username}/${repo_name})
+  Project Link: [https://github.com/${githubUsername}/${repoName}](https://github.com/${githubUsername}/${repoName})
   
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -218,23 +225,23 @@ To get a local copy up and running follow these simple example steps.
   
   <!-- MARKDOWN LINKS & IMAGES -->
 
-  [contributors-shield]: https://img.shields.io/github/contributors/${github_username}/${repo_name}.svg?style=for-the-badge
-  [contributors-url]: https://github.com/${github_username}/${repo_name}/graphs/contributors
+  [contributors-shield]: https://img.shields.io/github/contributors/${githubUsername}/${repoName}.svg?style=for-the-badge
+  [contributors-url]: https://github.com/${githubUsername}/${repoName}/graphs/contributors
   
-  [forks-shield]: https://img.shields.io/github/forks/${github_username}/${repo_name}.svg?style=for-the-badge
-  [forks-url]: https://github.com/${github_username}/${repo_name}/network/members
+  [forks-shield]: https://img.shields.io/github/forks/${githubUsername}/${repoName}.svg?style=for-the-badge
+  [forks-url]: https://github.com/${githubUsername}/${repoName}/network/members
   
-  [stars-shield]: https://img.shields.io/github/stars/${github_username}/${repo_name}.svg?style=for-the-badge
-  [stars-url]: https://github.com/${github_username}/${repo_name}/stargazers
+  [stars-shield]: https://img.shields.io/github/stars/${githubUsername}/${repoName}.svg?style=for-the-badge
+  [stars-url]: https://github.com/${githubUsername}/${repoName}/stargazers
   
-  [issues-shield]: https://img.shields.io/github/issues/${github_username}/${repo_name}.svg?style=for-the-badge
-  [issues-url]: https://github.com/${github_username}/${repo_name}/issues
+  [issues-shield]: https://img.shields.io/github/issues/${githubUsername}/${repoName}.svg?style=for-the-badge
+  [issues-url]: https://github.com/${githubUsername}/${repoName}/issues
   
-  [license-shield]: https://img.shields.io/github/license/${github_username}/${repo_name}.svg?style=for-the-badge
-  [license-url]: https://github.com/${github_username}/${repo_name}/blob/main/LICENSE
+  [license-shield]: https://img.shields.io/github/license/${githubUsername}/${repoName}.svg?style=for-the-badge
+  [license-url]: https://github.com/${githubUsername}/${repoName}/blob/main/LICENSE
   
   [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-  [linkedin-url]: https://linkedin.com/in/${linkedin_username}
+  [linkedin-url]: https://linkedin.com/in/${linkedinUsername}
 
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
@@ -242,13 +249,6 @@ To get a local copy up and running follow these simple example steps.
   [functionality-gif]: https://placehold.co/600x400?text=Placeholder
   [responsive-screenshot]: https://placehold.co/600x400?text=Placeholder
 `;
-}
-
-function capitalise(str) {
-  return str
-    .split(" ")
-    .map((name) => name[0].toUpperCase() + name.slice(1))
-    .join(" ");
 }
 
 module.exports = generateMarkdown;
